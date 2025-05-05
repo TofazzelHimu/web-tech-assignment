@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="index.html" class="btn small">← Back to Home</a>
+    <div class="container">
+        <h2>Sample Employee List</h2>
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>ID</th><th>Name</th><th>Email</th><th>Department</th>
+                    <th>Joining Date</th><th>Gender</th><th>Type</th><th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample Rows -->
+                <tr>
+                    <td>EMP001</td><td>Eshan</td><td>eshan@gmail.com</td><td>HR</td>
+                    <td>2022-01-01</td><td>Male</td><td>Full-Time</td>
+                    <td><button onclick="editRow(this)">Edit</button><button onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+                <!-- Add more rows similarly -->
+            </tbody>
+        </table>
+
+        <h3>Edit Employee</h3>
+        <input type="text" id="editId" placeholder="ID">
+        <input type="text" id="editName" placeholder="Name">
+        <input type="email" id="editEmail" placeholder="Email">
+        <input type="text" id="editDept" placeholder="Department">
+        <input type="date" id="editDate">
+        <input type="text" id="editGender" placeholder="Gender">
+        <input type="text" id="editType" placeholder="Employment Type">
+        <button onclick="saveChanges()">Save Changes</button>
+    </div>
+    <script src="employees.js"></script>
+</body>
+</html>

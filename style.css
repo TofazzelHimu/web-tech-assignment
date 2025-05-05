@@ -1,0 +1,92 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #003366;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #004999;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.btn.small {
+    background-color: #6c757d;
+    font-size: 0.9em;
+}
+
+.btn.cancel {
+    background-color: #dc3545;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #e3f2fd;
+    color: #004085;
+}
+
+.result-box {
+    margin-top: 20px;
+    background-color: #e6ffed;
+    padding: 15px;
+    border: 1px solid #28a745;
+    border-radius: 5px;
+}

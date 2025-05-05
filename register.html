@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register New Employee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="index.html" class="btn small">← Back to Home</a>
+    <div class="container">
+        <h2>Employee Registration</h2>
+        <form id="form1">
+            <label>Employee ID <input type="text" id="employeeId"></label>
+            <span class="error" id="employeeIdError"></span>
+
+            <label>Full Name <input type="text" id="fullName"></label>
+            <span class="error" id="fullNameError"></span>
+
+            <label>Email <input type="email" id="email"></label>
+            <span class="error" id="emailError"></span>
+
+            <label>Department
+                <select id="department">
+                    <option value="">Select</option>
+                    <option value="HR">HR</option>
+                    <option value="Sales">Sales</option>
+                    <option value="IT">IT</option>
+                    <option value="Marketing">Marketing</option>
+                </select>
+            </label>
+            <span class="error" id="departmentError"></span>
+
+            <label>Joining Date <input type="date" id="JoiningDate"></label>
+            <span class="error" id="JoiningDateError"></span>
+
+            <label>Gender
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Other"> Other
+            </label>
+            <span class="error" id="genderError"></span>
+
+            <label>Employment Type
+                <input type="checkbox" name="empType" value="Full-Time"> Full-Time
+                <input type="checkbox" name="empType" value="Part-Time"> Part-Time
+            </label>
+            <span class="error" id="checkboxError"></span>
+
+            <div class="form-actions">
+                <button type="submit" class="btn">Submit</button>
+                <button type="reset" class="btn cancel">Reset</button>
+            </div>
+        </form>
+
+        <div id="display" class="result-box"></div>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
